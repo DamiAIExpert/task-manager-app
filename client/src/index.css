@@ -1,0 +1,235 @@
+/* Base styles */
+:root {
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --background-color: #f5f7fa;
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --success-color: #28a745;
+  --info-color: #17a2b8;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --light-color: #ffffff;
+  --dark-color: #343a40;
+  --text-color: #212529;
+  --muted-text-color: #6c757d;
+  --input-background: #e9ecef;
+  --input-border-color: #ced4da;
+  --input-focus-border-color: var(--primary-color);
+  --box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  --border-radius: 0.5rem;
+  --card-background: #ffffff;
+}
+
+/* Global settings */
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Button styles */
+button {
+  font-family: var(--font-family);
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-radius);
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+button:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+/* Form input styles */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  font-family: var(--font-family);
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-top: 0.25rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--input-background);
+  color: var(--text-color);
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  border-color: var(--input-focus-border-color);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+/* Card styles */
+.card {
+  background-color: var(--card-background);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 1rem;
+  width: 250px;
+  height: 100vh;
+}
+
+.sidebar .menu-item {
+  padding: 1rem;
+  color: var(--light-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .menu-item:hover {
+  background-color: #495057;
+  border-radius: var(--border-radius);
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+/* Paragraph styles */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--muted-text-color);
+}
+
+/* Flexbox utility classes */
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-gray-100 {
+  background-color: var(--background-color);
+}
+
+.bg-white {
+  background-color: var(--light-color);
+}
+
+.text-white {
+  color: var(--light-color);
+}
+
+.text-blue-600 {
+  color: var(--primary-color);
+}
+
+.text-gray-700 {
+  color: var(--text-color);
+}
+
+.text-gray-600 {
+  color: var(--muted-text-color);
+}
+
+.shadow-lg {
+  box-shadow: var(--box-shadow);
+}
+
+.rounded-lg {
+  border-radius: var(--border-radius);
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+/* Image styles */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive classes */
+@media (min-width: 768px) {
+  .md\\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\\:w-1\\2 {
+    width: 50%;
+  }
+}
+
+/* Additional custom styles */
+.object-cover {
+  object-fit: cover;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Specific hover colors */
+a.text-blue-600:hover {
+  color: #0056b3;
+}
+
+a.text-teal-600:hover {
+  color: #117a8b;
+}
+
+button:hover {
+  cursor: pointer;
+}

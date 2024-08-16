@@ -1,0 +1,101 @@
+/* Tasks Table Styling */
+.tasks-table-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tasks-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tasks-table th,
+.tasks-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tasks-table th {
+    background-color: #f4f6f8;
+}
+
+.tasks-table td button {
+    margin-right: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tasks-table td button:hover {
+    background-color: #2980b9;
+}
+
+.tasks-table td button:last-child {
+    background-color: #e74c3c;
+}
+
+.tasks-table td button:last-child:hover {
+    background-color: #c0392b;
+}
+
+/* Edit Task Form Styling */
+.edit-task-form-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.edit-task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit-task-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.edit-task-form input,
+.edit-task-form textarea,
+.edit-task-form select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.edit-task-form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-task-form-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-task-form-buttons button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit-task-form-buttons button[type="button"] {
+    background-color: #dc3545;
+    color: white;
+}
